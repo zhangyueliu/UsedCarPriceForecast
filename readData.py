@@ -41,3 +41,4 @@ print('AUC socre:',roc_auc_score(y_true, y_scores))
 #task-2 stash 2
 #task-1 stash apply
 #在贮藏上新建一个分支，当前修改将贮藏
+#在贮藏上新建一个分支，当前修改将贮藏
