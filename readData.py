@@ -39,3 +39,4 @@ y_scores = np.array([0.1, 0.4, 0.35, 0.8])
 print('AUC socre:',roc_auc_score(y_true, y_scores))
 
 #task-2 stash 2
+#task-1 stash apply
