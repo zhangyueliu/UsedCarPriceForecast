@@ -3,14 +3,18 @@ import numpy as np
 import pandas as pd
 
 ## 通过Pandas对于数据进行读取 (pandas是一个很友好的数据读取函数库)
-# Train_data = pd.read_csv('datalab/used_car_train_20200313.csv', sep=' ')
+Train_data = pd.read_csv('datalab/used_car_train_20200313.csv', sep=' ')
 # TestA_data = pd.read_csv('datalab/used_car_testA_20200313.csv', sep=' ')
 ## 输出数据的大小信息
 # print('Train data shape:',Train_data.shape)
 # print('TestA data shape:',TestA_data.shape)
 
-# Train_data.head()
+#通过.head() 简要浏览读取数据的形式
 # print(Train_data.head())
+# print(Train_data.info())
+# print(Train_data.columns)
+# print(Train_data.describe())
+
 
 # 分类准确率分数
 # from sklearn.metrics import accuracy_score
@@ -32,11 +36,11 @@ import pandas as pd
 # print('F1-score:',metrics.f1_score(y_true, y_pred))
 
 ## AUC
-import numpy as np
-from sklearn.metrics import roc_auc_score,roc_curve
-y_true = np.array([0, 0, 1, 1])
-y_scores = np.array([0.1, 0.4, 0.35, 0.8])
-print('AUC socre:',roc_auc_score(y_true, y_scores))
+# import numpy as np
+# from sklearn.metrics import roc_auc_score,roc_curve
+# y_true = np.array([0, 0, 1, 1])
+# y_scores = np.array([0.1, 0.4, 0.35, 0.8])
+# print('AUC socre:',roc_auc_score(y_true, y_scores))
 
 #task-2 stash 2
 #task-1 stash apply
